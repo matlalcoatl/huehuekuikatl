@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HueHueKuikatl</title>    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link type="text/css" href="css/bbslider.css" rel="stylesheet" media="screen"/>
+
+
+</head>
+<body>
+
+<!-- encabezado titulo-->
+  <div  class="con-animate">
+	<div class="animate1">
+		<p class="titulo1"><span class="icon-radio"></span>&nbsp;&nbsp;&nbsp;&nbsp;HueHueRadio&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-station"></span></p>
+	</div>
+	<div class="animate2">
+		<p class="titulo2"><span class="icon-radio"></span>&nbsp;&nbsp;&nbsp;&nbsp;HueHueRadio&nbsp;&nbsp;&nbsp;&nbsp;<span class="icon-station"></span></p>
+	</div>
+  </div>
+<br>
+<!--slider-->
+<div id="auto">
+      <div title="portada"><img src="img/demo/portada.jpg" alt="frente" width="507" height="338"/></div>
+      <div title="Mouse"><img src="img/demo/138071106.jpg" alt="mouse" width="507" height="338"/></div>
+      <div title="Business"><img src="img/demo/143177148.jpg" alt="business" width="507" height="338"/></div>
+      <div title="portada"><img src="img/demo/back.jpg" alt="trasera" width="507" height="338"/></div>
+    </div>
+
+<!--reproductor musica-->	
+<div class="container">
+<div class="player">
+    <div class="player__bar">
+        <div class="player__album">
+            <div class="player__albumImg active-song" data-author="ABBA" data-song="Side 1" data data-src="http://109.169.76.153:34829/huehuekuikatl.mp3"
+                style="background-image: url(img/album.jpg)">
+            </div>            
+        </div>
+        <div class="player__controls">
+
+            <div class="player__prev">
+                <svg class="icon">
+                    
+                </svg>
+            </div>
+            <!--<div class="player__next">
+                <svg class="icon">
+                    
+                </svg>
+            </div>-->
+
+            <div class="player__play">
+                <svg class="icon play">
+                    <use href="img/sprite.svg#play"></use>
+                </svg>
+                <svg class="icon pause">
+                    <use href="img/sprite.svg#pause"></use>
+                </svg>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="player__timeline">
+        <p class="player__author"></p>
+        <p class="player__song"></p>
+        <div class="player__timelineBar">
+            <div id="playhead"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- END CONTENT  -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tweenmax.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bbslider.js"></script>
+<script>/*
+$(function() {
+	var slides1 = $('#slides1'),
+		slides2 = $('#slides2');
+
+	//Example 1
+	slides1.properSlider({
+		width : 600,
+		height : 400
+	});
+
+	$('#next').click(function() {
+		slides1.properSlider('slide', 'next');
+		return false;
+	});
+
+	$('#prev').click(function() {
+		slides1.properSlider('slide', 'prev');
+		return false;
+	});
+
+	//Example 2
+	slides2.properSlider({
+		width: 600,
+		height: 400,
+		auto_slide: true
+	});
+});
+
+  $( function() {
+    // run the currently selected effect
+    function runEffect() {
+      var selectedEffect = "pulsate";//slide,pulsate,highlight,fade
+ 
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+      if ( selectedEffect  === "scale" ) {
+        options = { percent: 50 };
+      } else if ( selectedEffect  === "transfer" ) {
+        options = { to: "#button", className: "ui-effects-transfer" };
+      } else if (selectedEffect  === "size" ) {
+        options = { to: { width: 200, height: 60 } };
+      }
+ 
+      // Run the effect
+      $( "#effect" ).effect( selectedEffect, options, 500, callback );
+    };
+ 
+    // Callback function to bring a hidden box back
+    function callback() {
+      setTimeout(function() {
+        $( "#effect" ).removeAttr( "style" ).hide().fadeIn();
+      }, 1000 );
+    };
+ 
+    
+      runEffect();	  
+    
+  } );
+*/
+
+  
+  
+  </script>
+</body>
+
+</html>
